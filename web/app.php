@@ -2,6 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+phpinfo();
+
 if (!getenv('BRANCH_NAME')) {
 	die('you must provide branch name env');
 }
