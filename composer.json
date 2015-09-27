@@ -1,0 +1,12 @@
+{
+    "name": "xav/testproject",
+    "require": {
+        "doctrine/dbal": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "Xavier L.",
+            "email": "xlembo@eliberty.fr"
+        }
+    ]
+}
