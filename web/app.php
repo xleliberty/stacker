@@ -38,7 +38,7 @@ $result = $conn->fetchAll('SELECT * FROM tags LIMIT 10');
         <pre>
         I am HOST <?php print_r( $_SERVER['SERVER_ADDR']); ?>
         </pre>
-		<h4>BRANCH 1 here are tags</h4>
+		<h4>BRANCH 2 here are tags</h4>
 		<ul>
 			<?php foreach ($result as $row): ?>
 				<li><?php echo $row['slug']?></li>
