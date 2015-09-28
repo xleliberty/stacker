@@ -7,6 +7,11 @@ if (!getenv('BRANCH_NAME')) {
 	die('you must provide branch name env');
 }
 
+if (!getenv('DB_NAME')) {
+	die('you must provide db name env');
+}
+
+
 if (!getenv('DB_USERNAME')) {
 	die('you must provide db username');
 }
@@ -22,7 +27,7 @@ if (!getenv('DB_HOST')) {
 
 $config = new \Doctrine\DBAL\Configuration();
 $connectionParams = array(
-    'dbname' => getenv('BRANCH_NAME'),
+    'dbname' => getenv('DB_NAME'),
     'user' => getenv('DB_USERNAME'),
     'password' => getenv('DB_PASSWORD'),
     'host' => getenv('DB_HOST'),
